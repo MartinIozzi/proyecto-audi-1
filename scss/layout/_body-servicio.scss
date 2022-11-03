@@ -1,0 +1,11 @@
+.config2{
+    background: #c2e59c;
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 1fr 620px 100px;
+}

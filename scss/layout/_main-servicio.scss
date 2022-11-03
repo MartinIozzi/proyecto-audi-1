@@ -1,0 +1,43 @@
+.servicios{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px;
+
+}
+.marco-atencion{
+    padding-top: 100px;
+}
+.atencion-cliente{
+    border: solid;
+    display: block;
+    margin: auto;
+    grid-area: body;
+    width: 100vh;
+
+}
+.atencion{
+    text-align: center;
+    gap: 10px;
+    font-family: sans-serif;;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.atencion-1{
+    font-size: 20px;
+    padding-left: 30px;
+    margin-top: 50px;
+    font-family: sans-serif;;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.atencion-2{
+    padding-left: 30px;
+    font-family: sans-serif;;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+}
