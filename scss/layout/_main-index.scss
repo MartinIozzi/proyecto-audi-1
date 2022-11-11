@@ -1,7 +1,11 @@
+section{
+    display: grid;
+    grid-area: main;
+}
 .parrafo1{
+    width: 80vh;
     font-family: sans-serif;;
     font-weight: bolder;
-    margin-top: 80px;
     padding-left: 25px;
     border: 10px;
     color: rgb(0, 0, 0);
@@ -9,11 +13,20 @@
 }
 
 .parrafo2{
+    width: 35vh;
     font-family: sans-serif;;
     font-weight: bolder;
     margin-top: 50px;
     padding-left: 25px;
     border: 10px;
-    color: rgb(0, 0, 0);
     font-size: 20px;
+}
+
+section div a{
+    text-decoration: none;
+    color: black;
+}
+
+section div a:hover{
+    color: greenyellow;
 }

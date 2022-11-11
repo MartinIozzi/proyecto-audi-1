@@ -5,7 +5,21 @@
 
 .contenedor-mobile {
   display: grid;
-  grid-area: body; }
+  grid-area: body;
+  background-color: #272727;
+  padding-top: 0px;
+  width: 80px;
+  border-radius: 20%; }
+
+.logo {
+  border: 15px;
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 100px; }
+
+.logo:hover {
+  transform: scale(1.3);
+  transition: transform 200ms; }
 
 .config {
   background-image: url(../img/a.jpg);
@@ -14,25 +28,37 @@
   background-position: center;
   display: grid;
   grid-area: body;
-  grid-template-rows: 1fr 620px 100px; }
+  grid-template-rows: 100px 720px 100px;
+  grid-template-areas: "body" "main" "footer"; }
+
+section {
+  display: grid;
+  grid-area: main; }
 
 .parrafo1 {
+  width: 80vh;
   font-family: sans-serif;
   font-weight: bolder;
-  margin-top: 80px;
   padding-left: 25px;
   border: 10px;
   color: black;
   font-size: 30px; }
 
 .parrafo2 {
+  width: 35vh;
   font-family: sans-serif;
   font-weight: bolder;
   margin-top: 50px;
   padding-left: 25px;
   border: 10px;
-  color: black;
   font-size: 20px; }
+
+section div a {
+  text-decoration: none;
+  color: black; }
+
+section div a:hover {
+  color: greenyellow; }
 
 .config3 {
   background-image: url(../img/16503593529199.jpg);
@@ -217,7 +243,8 @@
   font-weight: bold; }
 
 footer {
-  padding-top: 180px; }
+  display: grid;
+  grid-area: footer; }
 
 .iconos {
   padding: 20px;
@@ -265,119 +292,6 @@ footer {
   .footer1 .iconos .youtube:hover {
     transform: scale(1.3);
     transition: transform 100ms; }
-
-/*index*/
-@media (max-width: 576px) {
-  .background-img {
-    background-image: url(../img/fondo-celular.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; }
-  .contenedor {
-    display: flex; }
-  .parrafo1 {
-    font-family: sans-serif;
-    font-weight: bolder;
-    padding-left: 90px;
-    border: 5px;
-    color: black;
-    font-size: 20px;
-    margin-top: 10px; }
-  .parrafo2 {
-    font-family: sans-serif;
-    font-weight: bolder;
-    padding-left: 90px;
-    border: 5px;
-    color: black;
-    font-size: 15px; }
-  .contenedor-busqueda {
-    display: none; }
-  .logo {
-    margin-left: 70px;
-    size: 50px; }
-  .contenedor-mobile {
-    display: flex;
-    box-sizing: border-box;
-    width: 70px;
-    height: 100%;
-    padding-right: 0%; }
-  .container-fluid {
-    position: absolute;
-    top: 40px;
-    right: 5px; }
-  .buscar-mobile {
-    width: 300px; }
-  footer {
-    margin-left: 50px;
-    margin-top: 50px; } }
-
-/*novedades*/
-@media (max-width: 576px) {
-  .estructura {
-    display: block;
-    margin-left: 90px; }
-  .info-autos {
-    margin-bottom: 10px; }
-  .fotos-autos {
-    border: solid black;
-    border-radius: 5% 5% 5% 5%;
-    max-width: 350px; }
-  footer {
-    margin-left: 70px; }
-  .btn-close {
-    position: absolute;
-    right: 60px; } }
-
-/*galeria*/
-@media (max-width: 576px) {
-  main h1 {
-    padding-left: 100px;
-    padding-top: 50px; }
-  .marco {
-    padding-top: 150px;
-    padding-left: 70px; }
-  .modelo {
-    border: solid #333333;
-    width: 500px;
-    height: 300px;
-    display: block;
-    margin: auto; }
-  footer {
-    padding-top: 50px; } }
-
-/*atencion al cliente*/
-@media (max-width: 576px) {
-  .servicios {
-    list-style: none;
-    text-decoration: none;
-    font-size: 20px;
-    padding-left: 80px; }
-  .atencion-cliente {
-    border: solid;
-    display: block;
-    margin: 100px;
-    width: 50vh; }
-  .atencion {
-    text-align: center;
-    padding-left: 20px;
-    gap: 10px;
-    font-family: sans-serif;
-    color: black;
-    font-weight: bolder;
-    font-size: 15px; }
-  .atencion-1 {
-    font-size: 20px;
-    padding-left: 80px;
-    margin-top: 50px;
-    font-family: sans-serif;
-    color: white;
-    font-weight: bolder; }
-  .atencion-2 {
-    padding-left: 80px;
-    font-family: sans-serif;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px; } }
 
 /*index*/
 @media (max-width: 768px) {
@@ -470,6 +384,123 @@ footer {
     border: solid;
     display: block;
     margin-bottom: 80px;
+    width: 50vh; }
+  .atencion {
+    text-align: center;
+    padding-left: 20px;
+    gap: 10px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 15px; }
+  .atencion-1 {
+    font-size: 20px;
+    padding-left: 80px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder; }
+  .atencion-2 {
+    padding-left: 80px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px; } }
+
+/*index*/
+@media (max-width: 400px) {
+  .background-img {
+    background-image: url(../../img/fondo-celular.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+  .contenedor {
+    display: flex; }
+  .parrafo1 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 90px;
+    border: 5px;
+    color: black;
+    font-size: 12px;
+    margin-top: 10px; }
+  .parrafo2 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 90px;
+    border: 5px;
+    color: black;
+    font-size: 11px; }
+  .contenedor-busqueda {
+    display: none; }
+  .logo {
+    margin-left: 70px;
+    size: 50px; }
+  .contenedor-mobile {
+    display: flex;
+    box-sizing: border-box;
+    width: 70px;
+    height: 100%;
+    padding-right: 0%; }
+  .container-fluid {
+    position: absolute;
+    top: 40px;
+    right: 5px; }
+  .buscar-mobile {
+    width: 300px; }
+  footer {
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px; }
+  .iconos {
+    margin: 0px; } }
+
+/*novedades*/
+@media (max-width: 400px) {
+  .estructura {
+    display: block;
+    margin-left: 90px; }
+  .info-autos {
+    width: 400px;
+    margin-bottom: 10px; }
+  .fotos-autos {
+    border: solid black;
+    border-radius: 5% 5% 5% 5%;
+    max-width: 350px; }
+  footer {
+    margin-left: 70px; }
+  .btn-close {
+    position: absolute;
+    right: 60px; } }
+
+/*galeria*/
+@media (max-width: 400px) {
+  main h1 {
+    padding-left: 100px;
+    padding-top: 50px; }
+  .marco {
+    padding-top: 150px;
+    padding-left: 70px; }
+  .modelo {
+    border: solid #333333;
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: auto; }
+  footer {
+    padding-top: 50px; } }
+
+/*atencion al cliente*/
+@media (max-width: 400px) {
+  .servicios {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 80px; }
+  .atencion-cliente {
+    border: solid;
+    display: block;
+    margin: 100px;
     width: 50vh; }
   .atencion {
     text-align: center;

@@ -1,7 +1,7 @@
 /*index*/
-@media (max-width:576px) {
+@media (max-width:400px){
     .background-img{
-        background-image: url(../img/fondo-celular.jpg);
+        background-image: url(../../img/fondo-celular.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -17,7 +17,7 @@
         padding-left: 90px;
         border: 5px;
         color: black;
-        font-size: 20px;
+        font-size: 12px;
         margin-top: 10px;
     }
 
@@ -27,7 +27,7 @@
         padding-left: 90px;
         border: 5px;
         color: black;
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .contenedor-busqueda{
@@ -57,18 +57,23 @@
     }
     
     footer{
+        width: 400px;
         margin-left: 50px;
         margin-top: 50px;
     }
+    .iconos{
+        margin: 0px;
+    }
 }
 /*novedades*/
-@media (max-width:576px) {
+@media (max-width:400px){
     .estructura{
         display: block;
         margin-left: 90px;
     }
 
     .info-autos{
+        width: 400px;
         margin-bottom: 10px;
     }
 
@@ -88,7 +93,7 @@
     }
 }
 /*galeria*/
-@media (max-width:576px) {
+@media (max-width:400px){
     main h1{
         padding-left: 100px;
         padding-top: 50px;
@@ -109,7 +114,7 @@
     }
 }
 /*atencion al cliente*/
-@media (max-width:576px) {
+@media (max-width:400px){
     .servicios{
         list-style: none;
         text-decoration: none;
