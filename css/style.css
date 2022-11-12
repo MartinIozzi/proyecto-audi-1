@@ -290,32 +290,41 @@ footer {
 
 /*index*/
 @media (max-width: 768px) {
-  .background-img {
-    background-image: url(../img/fondo-celular.jpg);
+  .config {
+    background-image: url(../img/fondo-tablet.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; }
+    background-position: center;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 620px 100px;
+    grid-template-areas: "body" "main" "footer"; }
+  .logo {
+    margin-left: 90px;
+    size: 50px; }
   .contenedor {
     display: flex; }
   .parrafo1 {
+    background-color: rgba(70, 70, 70, 0.692);
+    width: 550px;
     font-family: sans-serif;
     font-weight: bolder;
     padding-left: 90px;
-    padding-top: 30px;
+    padding-top: 15px;
     border: 5px;
     color: black;
     font-size: 20px;
     margin-top: 10px; }
   .parrafo2 {
+    background-color: rgba(70, 70, 70, 0.692);
+    width: 350px;
     font-family: sans-serif;
     font-weight: bolder;
     padding-left: 90px;
+    padding-top: 10px;
     border: 5px;
     color: black;
     font-size: 15px; }
-  .logo {
-    margin-left: 70px;
-    size: 50px; }
   .contenedor-mobile {
     display: flex;
     box-sizing: border-box;
@@ -325,8 +334,6 @@ footer {
   .container-fluid {
     position: absolute;
     right: 5px; }
-  .buscar-mobile {
-    width: 300px; }
   .footer {
     padding: 0px;
     margin: 0px; } }
@@ -342,8 +349,6 @@ footer {
     border: solid black;
     border-radius: 5% 5% 5% 5%;
     max-width: 350px; }
-  footer {
-    margin-left: 70px; }
   .btn-close {
     position: absolute;
     right: 60px; } }
@@ -361,9 +366,7 @@ footer {
     width: 500px;
     height: 300px;
     display: block;
-    margin: auto; }
-  footer {
-    padding-top: 50px; } }
+    margin: auto; } }
 
 /*atencion al cliente*/
 @media (max-width: 768px) {
@@ -401,11 +404,16 @@ footer {
 
 /*index*/
 @media (max-width: 400px) {
-  .background-img {
-    background-image: url(../../img/fondo-celular.jpg);
+  .config {
+    background-image: url(../img/fondo-celular.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; }
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 620px 100px;
+    grid-template-areas: "body" "main" "footer"; }
   .contenedor {
     display: flex; }
   .parrafo1 {
@@ -433,16 +441,9 @@ footer {
     padding-right: 0%; }
   .container-fluid {
     position: absolute;
-    top: 40px;
     right: 5px; }
-  .buscar-mobile {
-    width: 300px; }
   footer {
-    width: 400px;
-    margin-left: 50px;
-    margin-top: 50px; }
-  .iconos {
-    margin: 0px; } }
+    width: 100%; } }
 
 /*novedades*/
 @media (max-width: 400px) {
@@ -456,8 +457,6 @@ footer {
     border: solid black;
     border-radius: 5% 5% 5% 5%;
     max-width: 350px; }
-  footer {
-    margin-left: 70px; }
   .btn-close {
     position: absolute;
     right: 60px; } }
@@ -475,9 +474,7 @@ footer {
     width: 500px;
     height: 300px;
     display: block;
-    margin: auto; }
-  footer {
-    padding-top: 50px; } }
+    margin: auto; } }
 
 /*atencion al cliente*/
 @media (max-width: 400px) {
