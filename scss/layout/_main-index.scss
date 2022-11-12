@@ -1,19 +1,20 @@
 section{
     display: grid;
     grid-area: main;
+
 .parrafo1{
-    width: 80vh;
     font-family: sans-serif;;
     font-weight: bolder;
+    font-size: 30px;
     padding-left: 25px;
     border: 10px;
     color: rgb(0, 0, 0);
 }
 
 .parrafo2{
-    width: 35vh;
     font-family: sans-serif;;
     font-weight: bolder;
+    font-size: 20px;
     margin-top: 50px;
     padding-left: 25px;
     border: 10px;

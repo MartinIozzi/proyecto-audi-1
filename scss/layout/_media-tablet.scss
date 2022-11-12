@@ -7,8 +7,8 @@
         background-position: center;
         display: grid;
         grid-area: body;
-        grid-template-rows: 100px 620px 100px;
-        grid-template-areas: 
+        grid-template-rows: 100px 520px 100px;
+        grid-template-areas:
         "body"
         "main"
         "footer"
@@ -24,8 +24,8 @@
     }
 
     .parrafo1{
-        background-color: rgba(70, 70, 70, 0.692);
-        width: 550px;
+        background-color: rgba(73, 73, 73, 0.747);
+        width: 768px;
         font-family: sans-serif;
         font-weight: bolder;
         padding-left: 90px;
@@ -37,8 +37,8 @@
     }
 
     .parrafo2{
-        background-color: rgba(70, 70, 70, 0.692);
-        width: 350px;
+        background-color: rgba(73, 73, 73, 0.747);
+        width: 768px;
         font-family: sans-serif;
         font-weight: bolder;
         padding-left: 90px;
