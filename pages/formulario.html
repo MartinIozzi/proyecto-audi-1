@@ -27,7 +27,7 @@
 <body class="config4">
     <header>
         <div class="contenedor">
-                    <nav class="contenedor-mobile navbar navbar-dark bg-dark fixed-top">
+                    <nav class="contenedor-mobile navbar navbar-dark fixed-top">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -51,7 +51,7 @@
                                             <li class="nav-item">
                                             <a class="nav-link active" href="../pages/servicio-al-cliente.html">Servicio al cliente</a>
                                             <li class="nav-item">
-                                            <a class="nav-link active" href="../pages/formulario.html">Iniciar Sesion</a>
+                                            <a class="nav-link active" href="../pages/formulario.html">Consultas</a>
                                             </ul>
                                             </li>
                                     </ul>
@@ -70,47 +70,39 @@
         <form class="cuadro-de-informacion" action="" method="post" enctype="">
             <fieldset class="cuadro-de-informacion1">
                 <legend class="datos">Datos Personales</legend>
+                    <div class="espacios">
                 <label for="nombre">
                 <span class="letra">¿Cual es tu nombre?</span>
                 <input type="text" id="nombre" placeholder="escribí aca tu nombre"></label>
+                    </div>
+                    <div class="espacios">
                 <label for="apellido">
                 <span class="letra">¿Cual es tu apellido?</span>
                 <input type="text" id="apellido" placeholder="escribí aca tu apellido"></label>
-                
-
+                    </div>
+                    <div class="espacios">
                 <label for="email">
-                    <span class="letra">E-Mail</span>
-                    <input type="text" id="email" placeholder="escribí tu E-Mail">
-                </label>
-
+                <span class="letra">E-Mail</span>
+                <input type="text" id="email" placeholder="escribí tu E-Mail"></label>
+                    </div>
+                    <div class="espacios">
                 <label for="contraseña">
-                    <span class="letra">Introduce tu contraseña</span>
-                    <input type="text" id="contraseña" placeholder="escribí tu contraseña">
+                <span class="letra">Introduce tu contraseña</span>
+                <input type="text" id="contraseña" placeholder="escribí tu contraseña">
                 </label>
+                    </div>
             </fieldset>
-
-            <fieldset class="cuadro-de-informacion1">
-                <legend class="datos">Sexo</legend>
-                <label  class="letra"for="hombre">Hombre</label>
-                <input type="radio" id="hombre" name="sexo" value="hombre">
-                <label  class="letra"for="mujer">Mujer</label>
-                <input type="radio" id="mujer" name="sexo" value="mujer">
-                <label  class="letra"for="indefinido">Indefinido</label>
-                <input type="radio" name="sexo" id="indefinido" value="infefinido">
+            <fieldset>
+                <div>
+                <legend>Mensaje</legend>
+                <legend>Escriba aquí su consulta</legend>
+                <textarea class="text-area" name="mensaje" id="" cols="100" rows="10"></textarea>
+                <input class="boton-envio" type="submit" value="Enviar">
+                </div>
             </fieldset>
-
-            <fieldset class="cuadro-de-informacion1">
-                <legend class="datos">Fecha de Nacimiento</legend>
-                <label class="letra" for="">dd/mm/aaaa</label>
-                <input type="date" name="Fecha" id="ddmmaa">
-            </fieldset>
-            
-            </form>
-
-            
         </main>
     </body>
-        <footer class="footer1">
+        <footer>
             <div class="iconos">
                 <a href="https://es-la.facebook.com/AudiArg/" target="_blank"><img class="facebook" src="../img/facebook.png" width="40px" height="40px" alt="">
                     <a href="https://www.instagram.com/audiofficial/?hl=es" target="_blank"><img class="instagram" src="../img/instagram.png" width="40px" height="40px" alt="">

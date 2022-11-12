@@ -37,14 +37,14 @@ section {
   section .parrafo1 {
     font-family: sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 18px;
     padding-left: 25px;
     border: 10px;
     color: black; }
   section .parrafo2 {
     font-family: sans-serif;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 50px;
     padding-left: 25px;
     border: 10px;
@@ -97,7 +97,6 @@ section {
     display: flex;
     border: solid black;
     border-radius: 5%;
-    width: 600px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.61); }
   .estructura .fondo-texto {
@@ -194,48 +193,61 @@ section {
   font-size: 20px; }
 
 .config4 {
+  background-image: url(../img/fondo.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background: #9CECFB;
-  background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
-  background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); }
+  background-size: cover;
+  display: grid;
+  grid-area: body;
+  grid-template-rows: 100px 720px 100px;
+  grid-template-areas: "body" "main" "footer"; }
+
+main fieldset div {
+  border: black; }
 
 .cuadros {
-  padding-top: 100px;
   padding-left: 50px; }
 
 .cuadro-de-informacion {
   border: solid black;
-  box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
-  border-radius: 2%;
-  margin: 20px;
+  width: 95%;
+  margin: 0px;
   padding: 20px;
   background-color: rgba(248, 247, 253, 0.705); }
 
 .cuadro-de-informacion1 {
   margin: 20px;
-  padding: 20px;
-  background-color: rgba(34, 26, 71, 0.507); }
+  padding: 20px; }
 
-.cuadro-de-informacion1 {
-  margin: 20px;
-  padding: 20px;
-  background-color: rgba(34, 26, 71, 0.507); }
+fieldset legend {
+  text-align: center;
+  font-weight: bold; }
 
-.cuadro-de-informacion1 {
-  margin: 20px;
-  padding: 20px;
-  background-color: rgba(34, 26, 71, 0.507); }
+.text-area {
+  display: block;
+  margin: auto;
+  border-radius: 10px; }
+
+.boton-envio {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 100px; }
 
 .datos {
+  gap: 10px;
   font-size: x-large;
   font-weight: bolder; }
+
+.espacios {
+  margin-bottom: 20px; }
 
 .letra {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 footer {
   display: grid;
@@ -567,8 +579,8 @@ footer {
 @media (max-width: 400px) {
   .estructura {
     display: block;
-    margin-left: 90px; }
-  .info-autos {
+    margin-left: 0px; }
+  .info-autos .mobile {
     width: 400px;
     margin-bottom: 10px; }
   .fotos-autos {
@@ -627,3 +639,39 @@ footer {
     color: white;
     font-weight: bolder;
     font-size: 20px; } }
+
+@media (max-width: 400px) {
+  .config4 {
+    background-image: url(../img/fondo-celular-novedades.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 520px 100px;
+    grid-template-areas: "body" "main" "footer"; }
+  .cuadros {
+    padding-top: 20px;
+    padding-left: 50px; }
+  .cuadro-de-informacion {
+    border: solid black;
+    box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
+    width: 95%;
+    margin: 0px;
+    padding: 20px;
+    background-color: rgba(248, 247, 253, 0.705); }
+  .cuadro-de-informacion1 {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(34, 26, 71, 0.507); }
+  .datos {
+    gap: 10px;
+    font-size: x-large;
+    font-weight: bolder; }
+  .espacios {
+    margin-bottom: 20px; }
+  .letra {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; } }

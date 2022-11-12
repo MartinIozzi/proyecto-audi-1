@@ -1,8 +1,15 @@
 .config4{
+        background-image: url(../img/fondo.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
-        background: #9CECFB;
-        background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); 
-        background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); 
+        background-size: cover;
+        display: grid;
+        grid-area: body;
+        grid-template-rows: 100px 720px 100px;
+        grid-template-areas: 
+        "body"
+        "main"
+        "footer"
+        ;
     }

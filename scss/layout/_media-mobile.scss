@@ -220,10 +220,10 @@
 @media (max-width:400px){
     .estructura{
         display: block;
-        margin-left: 90px;
+        margin-left: 0px;
     }
 
-    .info-autos{
+    .info-autos .mobile{
         width: 400px;
         margin-bottom: 10px;
     }
@@ -298,4 +298,60 @@
         font-weight: bolder;
         font-size: 20px;
     }
+}
+
+
+//*formulario*//
+@media (max-width:400px){
+.config4{
+    background-image: url(../img/fondo-celular-novedades.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 520px 100px;
+    grid-template-areas: 
+    "body"
+    "main"
+    "footer"
+    ;
+
+}
+
+.cuadros{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.cuadro-de-informacion{
+    border: solid rgb(0, 0, 0);
+    box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
+    width: 95%;
+    margin: 0px;
+    padding: 20px;
+    background-color: rgba(248, 247, 253, 0.705);
+}
+
+.cuadro-de-informacion1{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(34, 26, 71, 0.507);
+}
+
+.datos{
+    gap: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.espacios{
+    margin-bottom: 20px;
+}
+
+.letra{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
 }
