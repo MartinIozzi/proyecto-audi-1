@@ -1,12 +1,23 @@
-.servicios{
+.servicio-cliente{
+    padding-left: 0;
+    display: block;
+    margin: auto;
+}
+
+main li a{
     list-style: none;
     text-decoration: none;
+}
+
+.servicios{
+    background-color: white;
+    color: rgb(4, 0, 255);
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: 10px;
 
 }
 .marco-atencion{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .atencion-cliente{
     border: solid;
@@ -17,6 +28,10 @@
 
 }
 .atencion{
+    display: block;
+    margin: auto;
+    background-color: rgba(75, 75, 75, 0.795);
+    width: 400px;
     text-align: center;
     gap: 10px;
     font-family: sans-serif;;

@@ -1,11 +1,7 @@
 .config1{
-    background: #3a6186;
-    background: -webkit-linear-gradient(to right, #89253e, #3a6186);
-    background: linear-gradient(to right, #89253e, #3a6186);
+    background-image: url(../img/fondo-galeria.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    display: grid;
-    grid-area: body;
-    grid-template-rows: 1fr 620px 100px;
+
 }

@@ -105,19 +105,43 @@
         display:block;
         margin:auto;
     }
+
+    .control{
+        display: none;
+    }
+
+    .fot-1{
+        margin-top: 90px;
+    }
 }
 /*atencion al cliente*/
 @media (max-width:576px){
+    .config2{
+        display: grid;
+        grid-area: body;
+        grid-template-rows: 100px 540px 100px;
+        grid-template-areas: 
+        "body"
+        "main"
+        "footer"
+        ;
+    }
+    
     .servicios{
         list-style: none;
+        background-color: white;
         text-decoration: none;
         font-size: 20px;
-        padding-left: 80px;
+        padding-left: 10px;
     }
+
+    .marco-atencion{
+        margin-top: 0;
+    }
+
     .atencion-cliente{
         border: solid;
         display: block;
-        margin: 100px;
         width: 50vh;
     
     }
@@ -132,6 +156,7 @@
     }
     
     .atencion-1{
+        background-color: gray;
         font-size: 20px;
         padding-left: 80px;
         margin-top: 50px;
@@ -141,6 +166,7 @@
     }
     
     .atencion-2{
+        background-color: gray;
         padding-left: 80px;
         font-family: sans-serif;;
         color: rgb(255, 255, 255);
@@ -148,6 +174,86 @@
         font-size: 20px;
     }
 }
+    //*formulario*//
+    @media (max-width:576px){
+        .config4{
+            background-image: url(../img/fondo-celular-novedades.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            grid-area: body;
+            grid-template-rows: 60px 720px 100px;
+            grid-template-areas: 
+            "body"
+            "main"
+            "footer"
+            ;
+        
+        }
+        
+        main fieldset div{
+            border: black;
+        }
+        
+        .cuadros{
+            padding-left: 50px;
+        }
+        .cuadro-de-informacion{
+            display: block;
+            border: solid rgb(0, 0, 0);
+            width: 500px;
+            margin: 0px;
+            padding-left: 0;
+            background-color: rgba(248, 247, 253, 0.705);
+        }
+        
+        .cuadro-de-informacion1{
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        fieldset legend{
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .holder{
+            width: 150px;
+        }
+        
+        .text-area{
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            width: 300px;
+        }
+        
+        .boton-envio{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 100px;
+        }
+        
+        .datos{
+            gap: 10px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        
+        .espacios{
+            margin-bottom: 20px;
+        }
+        
+        .letra{
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            text-align: center;
+        }
+    }
 
 /*index*/
 @media (max-width:400px){
@@ -220,7 +326,7 @@
 @media (max-width:400px){
     .estructura{
         display: block;
-        margin-left: 0px;
+        margin-left: 50px;
     }
 
     .info-autos .mobile{
@@ -239,37 +345,43 @@
         right: 60px;
     }
 }
-/*galeria*/
-@media (max-width:400px){
-    main h1{
-        padding-left: 100px;
-        padding-top: 50px;
-    }
-    .marco{
-        padding-top: 150px;
-        padding-left: 70px;
-    }
-    .modelo{
-        border: solid rgb(51, 51, 51);
-        width: 500px;
-        height: 300px;
-        display:block;
-        margin:auto;
-    }
-}
+
 /*atencion al cliente*/
 @media (max-width:400px){
+    .config2{
+        display: grid;
+        grid-area: body;
+        grid-template-rows: 100px 540px 100px;
+        grid-template-areas: 
+        "body"
+        "main"
+        "footer"
+        ;
+    }
+    
+    .servicio-cliente{
+        display: block;
+        margin: auto;
+        padding-left: 0;
+    }
+
     .servicios{
+        color: blue($color: #000000);
         list-style: none;
         text-decoration: none;
         font-size: 20px;
-        padding-left: 80px;
+        padding-left: 10px;
     }
+
+    .marco-atencion{
+        margin-top: 0;
+    }
+
     .atencion-cliente{
         border: solid;
         display: block;
-        margin: 100px;
-        width: 50vh;
+        width: 400px;
+        margin-left: 0;
     
     }
     .atencion{
@@ -283,22 +395,25 @@
     }
     
     .atencion-1{
+        background-color: gray;
         font-size: 20px;
-        padding-left: 80px;
         margin-top: 50px;
         font-family: sans-serif;;
         color: rgb(255, 255, 255);
         font-weight: bolder;
+        padding-left: 0;
     }
     
     .atencion-2{
-        padding-left: 80px;
+        background-color: gray;
+        padding-left: 0;
         font-family: sans-serif;;
         color: rgb(255, 255, 255);
         font-weight: bolder;
         font-size: 20px;
     }
 }
+
 
 
 //*formulario*//
@@ -311,7 +426,7 @@
     background-size: cover;
     display: grid;
     grid-area: body;
-    grid-template-rows: 100px 520px 100px;
+    grid-template-rows: 60px 820px 100px;
     grid-template-areas: 
     "body"
     "main"
@@ -320,23 +435,48 @@
 
 }
 
+main fieldset div{
+    border: black;
+}
+
 .cuadros{
-    padding-top: 20px;
     padding-left: 50px;
 }
 .cuadro-de-informacion{
+    display: block;
     border: solid rgb(0, 0, 0);
-    box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
-    width: 95%;
+    width: 400px;
     margin: 0px;
-    padding: 20px;
+    padding-left: 0;
     background-color: rgba(248, 247, 253, 0.705);
 }
 
 .cuadro-de-informacion1{
     margin: 20px;
     padding: 20px;
-    background-color: rgba(34, 26, 71, 0.507);
+}
+
+fieldset legend{
+    text-align: center;
+    font-weight: bold;
+}
+
+.holder{
+    width: 300px;
+}
+
+.text-area{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.boton-envio{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
 }
 
 .datos{
@@ -352,6 +492,7 @@
 .letra{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
+    text-align: center;
 }
 }

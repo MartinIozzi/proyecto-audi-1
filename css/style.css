@@ -56,7 +56,7 @@ section {
     border-color: black; }
 
 .config3 {
-  background-image: url(../img/16503593529199.jpg);
+  background-image: url(../img/novedades.jpg);
   background-size: cover;
   background-attachment: fixed; }
 
@@ -77,14 +77,17 @@ section {
   .estructura .fotos-autos {
     border: solid black;
     border-radius: 5%;
-    width: 500px; }
+    width: 500px;
+    display: block;
+    margin: auto; }
   .estructura .nombre-autos {
     font-family: 'Kanit', sans-serif;
     color: #001780;
     color: solid;
     font-size: 20px;
     font-weight: bolder;
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-align: center; }
   .estructura .lista-autos {
     font-family: 'Kanit', sans-serif;
     padding: 0px;
@@ -122,45 +125,55 @@ section {
   border: 10px; }
 
 .config1 {
-  background: #3a6186;
-  background: -webkit-linear-gradient(to right, #89253e, #3a6186);
-  background: linear-gradient(to right, #89253e, #3a6186);
+  background-image: url(../img/fondo-galeria.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  display: grid;
-  grid-area: body;
-  grid-template-rows: 1fr 620px 100px; }
+  background-position: center; }
+
+main h1 {
+  color: white;
+  padding-left: 100px; }
 
 .modelo {
-  border: solid #333333;
+  border: solid black;
   width: 800px;
-  height: 600px;
+  height: 500px;
   display: block;
   margin: auto; }
 
 .marco {
   padding-top: 50px; }
 
+.fot-1 {
+  margin-top: 180px; }
+
 .config2 {
-  background: #c2e59c;
-  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
-  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  background-image: url(../img/fondo-servicio.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   display: grid;
   grid-area: body;
-  grid-template-rows: 1fr 620px 100px; }
+  grid-template-rows: 100px 720px 100px;
+  grid-template-areas: "body" "main" "footer"; }
+
+.servicio-cliente {
+  padding-left: 0;
+  display: block;
+  margin: auto; }
+
+main li a {
+  list-style: none;
+  text-decoration: none; }
 
 .servicios {
-  list-style: none;
-  text-decoration: none;
+  background-color: white;
+  color: #0400ff;
   font-size: 20px;
-  padding-left: 30px; }
+  padding-left: 10px; }
 
 .marco-atencion {
-  padding-top: 100px; }
+  padding-top: 80px; }
 
 .atencion-cliente {
   border: solid;
@@ -170,6 +183,10 @@ section {
   width: 100vh; }
 
 .atencion {
+  display: block;
+  margin: auto;
+  background-color: rgba(75, 75, 75, 0.795);
+  width: 400px;
   text-align: center;
   gap: 10px;
   font-family: sans-serif;
@@ -213,7 +230,8 @@ main fieldset div {
   border: solid black;
   width: 95%;
   margin: 0px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: rgba(248, 247, 253, 0.705); }
 
 .cuadro-de-informacion1 {
@@ -223,6 +241,9 @@ main fieldset div {
 fieldset legend {
   text-align: center;
   font-weight: bold; }
+
+.holder {
+  width: 300px; }
 
 .text-area {
   display: block;
@@ -246,7 +267,7 @@ fieldset legend {
 .letra {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center; }
 
 footer {
@@ -354,7 +375,8 @@ footer {
 @media (max-width: 768px) {
   .estructura {
     display: block;
-    margin-left: 90px; }
+    margin-left: 90px;
+    width: 500px; }
   .info-autos {
     margin-bottom: 10px; }
   .fotos-autos {
@@ -378,10 +400,23 @@ footer {
     width: 500px;
     height: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .control {
+    display: none; }
+  .fot-1 {
+    margin-top: 90px; }
+  .custom-colors {
+    display: none; } }
 
 /*atencion al cliente*/
 @media (max-width: 768px) {
+  .config2 {
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 540px 100px;
+    grid-template-areas: "body" "main" "footer"; }
+  .servicio-cliente {
+    margin-top: 0px; }
   .servicios {
     list-style: none;
     text-decoration: none;
@@ -390,7 +425,6 @@ footer {
   .atencion-cliente {
     border: solid;
     display: block;
-    margin-bottom: 80px;
     width: 50vh; }
   .atencion {
     text-align: center;
@@ -413,6 +447,58 @@ footer {
     color: white;
     font-weight: bolder;
     font-size: 20px; } }
+
+@media (max-width: 768px) {
+  .config4 {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 720px 100px;
+    grid-template-areas: "body" "main" "footer"; }
+  main fieldset div {
+    border: black; }
+  .cuadros {
+    padding-left: 50px; }
+  .cuadro-de-informacion {
+    border: solid black;
+    width: 650px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(248, 247, 253, 0.705); }
+  .cuadro-de-informacion1 {
+    margin: 20px;
+    padding: 20px; }
+  fieldset legend {
+    text-align: center;
+    font-weight: bold; }
+  .holder {
+    width: 300px; }
+  .text-area {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 600px; }
+  .boton-envio {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px; }
+  .datos {
+    gap: 10px;
+    font-size: x-large;
+    font-weight: bolder; }
+  .espacios {
+    margin-bottom: 20px; }
+  .letra {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center; } }
 
 /*index*/
 @media (max-width: 576px) {
@@ -491,19 +577,30 @@ footer {
     width: 500px;
     height: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .control {
+    display: none; }
+  .fot-1 {
+    margin-top: 90px; } }
 
 /*atencion al cliente*/
 @media (max-width: 576px) {
+  .config2 {
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 540px 100px;
+    grid-template-areas: "body" "main" "footer"; }
   .servicios {
     list-style: none;
+    background-color: white;
     text-decoration: none;
     font-size: 20px;
-    padding-left: 80px; }
+    padding-left: 10px; }
+  .marco-atencion {
+    margin-top: 0; }
   .atencion-cliente {
     border: solid;
     display: block;
-    margin: 100px;
     width: 50vh; }
   .atencion {
     text-align: center;
@@ -514,6 +611,7 @@ footer {
     font-weight: bolder;
     font-size: 15px; }
   .atencion-1 {
+    background-color: gray;
     font-size: 20px;
     padding-left: 80px;
     margin-top: 50px;
@@ -521,11 +619,64 @@ footer {
     color: white;
     font-weight: bolder; }
   .atencion-2 {
+    background-color: gray;
     padding-left: 80px;
     font-family: sans-serif;
     color: white;
     font-weight: bolder;
     font-size: 20px; } }
+
+@media (max-width: 576px) {
+  .config4 {
+    background-image: url(../img/fondo-celular-novedades.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 60px 720px 100px;
+    grid-template-areas: "body" "main" "footer"; }
+  main fieldset div {
+    border: black; }
+  .cuadros {
+    padding-left: 50px; }
+  .cuadro-de-informacion {
+    display: block;
+    border: solid black;
+    width: 500px;
+    margin: 0px;
+    padding-left: 0;
+    background-color: rgba(248, 247, 253, 0.705); }
+  .cuadro-de-informacion1 {
+    margin: 20px;
+    padding: 20px; }
+  fieldset legend {
+    text-align: center;
+    font-weight: bold; }
+  .holder {
+    width: 150px; }
+  .text-area {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 300px; }
+  .boton-envio {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px; }
+  .datos {
+    gap: 10px;
+    font-size: x-large;
+    font-weight: bolder; }
+  .espacios {
+    margin-bottom: 20px; }
+  .letra {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center; } }
 
 /*index*/
 @media (max-width: 400px) {
@@ -579,7 +730,7 @@ footer {
 @media (max-width: 400px) {
   .estructura {
     display: block;
-    margin-left: 0px; }
+    margin-left: 50px; }
   .info-autos .mobile {
     width: 400px;
     margin-bottom: 10px; }
@@ -591,33 +742,30 @@ footer {
     position: absolute;
     right: 60px; } }
 
-/*galeria*/
-@media (max-width: 400px) {
-  main h1 {
-    padding-left: 100px;
-    padding-top: 50px; }
-  .marco {
-    padding-top: 150px;
-    padding-left: 70px; }
-  .modelo {
-    border: solid #333333;
-    width: 500px;
-    height: 300px;
-    display: block;
-    margin: auto; } }
-
 /*atencion al cliente*/
 @media (max-width: 400px) {
+  .config2 {
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 100px 540px 100px;
+    grid-template-areas: "body" "main" "footer"; }
+  .servicio-cliente {
+    display: block;
+    margin: auto;
+    padding-left: 0; }
   .servicios {
+    color: 0;
     list-style: none;
     text-decoration: none;
     font-size: 20px;
-    padding-left: 80px; }
+    padding-left: 10px; }
+  .marco-atencion {
+    margin-top: 0; }
   .atencion-cliente {
     border: solid;
     display: block;
-    margin: 100px;
-    width: 50vh; }
+    width: 400px;
+    margin-left: 0; }
   .atencion {
     text-align: center;
     padding-left: 20px;
@@ -627,14 +775,16 @@ footer {
     font-weight: bolder;
     font-size: 15px; }
   .atencion-1 {
+    background-color: gray;
     font-size: 20px;
-    padding-left: 80px;
     margin-top: 50px;
     font-family: sans-serif;
     color: white;
-    font-weight: bolder; }
+    font-weight: bolder;
+    padding-left: 0; }
   .atencion-2 {
-    padding-left: 80px;
+    background-color: gray;
+    padding-left: 0;
     font-family: sans-serif;
     color: white;
     font-weight: bolder;
@@ -649,22 +799,37 @@ footer {
     background-size: cover;
     display: grid;
     grid-area: body;
-    grid-template-rows: 100px 520px 100px;
+    grid-template-rows: 60px 820px 100px;
     grid-template-areas: "body" "main" "footer"; }
+  main fieldset div {
+    border: black; }
   .cuadros {
-    padding-top: 20px;
     padding-left: 50px; }
   .cuadro-de-informacion {
+    display: block;
     border: solid black;
-    box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
-    width: 95%;
+    width: 400px;
     margin: 0px;
-    padding: 20px;
+    padding-left: 0;
     background-color: rgba(248, 247, 253, 0.705); }
   .cuadro-de-informacion1 {
     margin: 20px;
-    padding: 20px;
-    background-color: rgba(34, 26, 71, 0.507); }
+    padding: 20px; }
+  fieldset legend {
+    text-align: center;
+    font-weight: bold; }
+  .holder {
+    width: 300px; }
+  .text-area {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 300px; }
+  .boton-envio {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px; }
   .datos {
     gap: 10px;
     font-size: x-large;
@@ -674,4 +839,5 @@ footer {
   .letra {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold; } }
+    font-weight: bolder;
+    text-align: center; } }

@@ -71,11 +71,13 @@
     .estructura{
         display: block;
         margin-left: 90px;
+        width: 500px;
     }
 
     .info-autos{
         margin-bottom: 10px;
     }
+
 
     .fotos-autos{
         border: solid black;
@@ -105,9 +107,35 @@
         display:block;
         margin:auto;
     }
+    
+    .control{
+        display: none;
+    }
+
+    .fot-1{
+        margin-top: 90px;
+    }
+    .custom-colors{
+        display: none;
+    }
 }
 /*atencion al cliente*/
 @media (max-width:768px) {
+    .config2{
+        display: grid;
+        grid-area: body;
+        grid-template-rows: 100px 540px 100px;
+        grid-template-areas: 
+        "body"
+        "main"
+        "footer"
+        ;
+    }
+
+    .servicio-cliente{
+        margin-top: 0px;
+    }
+
     .servicios{
         list-style: none;
         text-decoration: none;
@@ -117,7 +145,6 @@
     .atencion-cliente{
         border: solid;
         display: block;
-        margin-bottom: 80px;
         width: 50vh;
     
     }
@@ -147,4 +174,82 @@
         font-weight: bolder;
         font-size: 20px;
     }
+}
+    //*formulario*//
+    @media (max-width:768px){
+        .config4{
+            background-image: url(../img/fondo.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            grid-area: body;
+            grid-template-rows: 100px 720px 100px;
+            grid-template-areas: 
+            "body"
+            "main"
+            "footer"
+            ;
+        }
+        main fieldset div{
+            border: black;
+        }
+        
+        .cuadros{
+            padding-left: 50px;
+        }
+        .cuadro-de-informacion{
+            border: solid rgb(0, 0, 0);
+            width: 650px;
+            margin: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(248, 247, 253, 0.705);
+        }
+        
+        .cuadro-de-informacion1{
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        fieldset legend{
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .holder{
+            width: 300px;
+        }
+        
+        .text-area{
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            width: 600px;
+        }
+        
+        .boton-envio{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 100px;
+        }
+        
+        .datos{
+            gap: 10px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        
+        .espacios{
+            margin-bottom: 20px;
+        }
+        
+        .letra{
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            text-align: center;
+        }
 }

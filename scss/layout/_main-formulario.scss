@@ -9,7 +9,8 @@ main fieldset div{
     border: solid rgb(0, 0, 0);
     width: 95%;
     margin: 0px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: rgba(248, 247, 253, 0.705);
 }
 
@@ -23,6 +24,9 @@ fieldset legend{
     font-weight: bold;
 }
 
+.holder{
+    width: 300px;
+}
 
 .text-area{
     display: block;
@@ -50,6 +54,6 @@ fieldset legend{
 .letra{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
 }
