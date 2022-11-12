@@ -1,7 +1,6 @@
 section{
     display: grid;
     grid-area: main;
-}
 .parrafo1{
     width: 80vh;
     font-family: sans-serif;;
@@ -9,7 +8,6 @@ section{
     padding-left: 25px;
     border: 10px;
     color: rgb(0, 0, 0);
-    font-size: 30px;
 }
 
 .parrafo2{
@@ -19,14 +17,13 @@ section{
     margin-top: 50px;
     padding-left: 25px;
     border: 10px;
-    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.btn{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 250px;
+    border-color: black;
 }
 
-section div a{
-    text-decoration: none;
-    color: black;
-}
-
-section div a:hover{
-    color: greenyellow;
 }

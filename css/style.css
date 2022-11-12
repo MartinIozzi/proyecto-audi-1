@@ -6,7 +6,7 @@
 .contenedor-mobile {
   display: grid;
   grid-area: body;
-  background-color: #272727;
+  background-color: #474747;
   padding-top: 0px;
   width: 80px;
   border-radius: 20%; }
@@ -34,31 +34,26 @@
 section {
   display: grid;
   grid-area: main; }
-
-.parrafo1 {
-  width: 80vh;
-  font-family: sans-serif;
-  font-weight: bolder;
-  padding-left: 25px;
-  border: 10px;
-  color: black;
-  font-size: 30px; }
-
-.parrafo2 {
-  width: 35vh;
-  font-family: sans-serif;
-  font-weight: bolder;
-  margin-top: 50px;
-  padding-left: 25px;
-  border: 10px;
-  font-size: 20px; }
-
-section div a {
-  text-decoration: none;
-  color: black; }
-
-section div a:hover {
-  color: greenyellow; }
+  section .parrafo1 {
+    width: 80vh;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 25px;
+    border: 10px;
+    color: black; }
+  section .parrafo2 {
+    width: 35vh;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-top: 50px;
+    padding-left: 25px;
+    border: 10px;
+    color: black; }
+  section .btn {
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 250px;
+    border-color: black; }
 
 .config3 {
   background-image: url(../img/16503593529199.jpg);
@@ -115,17 +110,17 @@ section div a:hover {
   color: white;
   font-family: sans-serif;
   font-weight: bolder;
+  padding-top: 20px;
   padding-left: 90px;
-  border: 10px;
-  font-size: 40px; }
+  border: 10px; }
 
 .parrafo4 {
   color: white;
   font-family: sans-serif;
   font-weight: bolder;
+  padding-top: 10px;
   padding-left: 90px;
-  border: 10px;
-  font-size: 20px; }
+  border: 10px; }
 
 .config1 {
   background: #3a6186;
@@ -318,8 +313,6 @@ footer {
     border: 5px;
     color: black;
     font-size: 15px; }
-  .contenedor-busqueda {
-    display: none; }
   .logo {
     margin-left: 70px;
     size: 50px; }
@@ -327,17 +320,16 @@ footer {
     display: flex;
     box-sizing: border-box;
     width: 70px;
-    height: 100%;
+    height: 50px;
     padding-right: 0%; }
   .container-fluid {
     position: absolute;
-    top: 40px;
     right: 5px; }
   .buscar-mobile {
     width: 300px; }
-  footer {
-    margin-left: 50px;
-    margin-top: 50px; } }
+  .footer {
+    padding: 0px;
+    margin: 0px; } }
 
 /*novedades*/
 @media (max-width: 768px) {
@@ -431,8 +423,6 @@ footer {
     border: 5px;
     color: black;
     font-size: 11px; }
-  .contenedor-busqueda {
-    display: none; }
   .logo {
     margin-left: 70px;
     size: 50px; }
@@ -440,7 +430,6 @@ footer {
     display: flex;
     box-sizing: border-box;
     width: 70px;
-    height: 100%;
     padding-right: 0%; }
   .container-fluid {
     position: absolute;
